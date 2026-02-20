@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    header, footer {
+        text-align: center;
+        padding: 15px;
+        background: #222;
+        color: white;
+    }
+
+    .grid-container {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0;
+    }
+
+    section {
+        padding: 20px;
+        border: 2px solid black;
+    }
+
+    section h2 {
+        margin-top: 0;
+        font-size: xx-large;
+        text-align: center;
+    }
+    section ul {
+        font-size: larger;
+    }
+
+    section ul li {
+        padding-top: 5px;
+    }
+
+    .expectations { color: blue; }
+    .motivations { color: green; }
+    .contributions { color: purple; }
+    .hindrances { color: red; }
+
+    @media (max-width: 900px) {
+        .grid-container {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .grid-container {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header><b>A TITLE</b></header>
+
+<div class="grid-container">
+    <section class="expectations">
+        <h2>Expectations</h2>
+        <ul>
+            <li>I expect to attain knowledge about programming. </li>
+            <li>I expect to attain real-life experience in programming. </li>
+            <li>I expect to be led to the right path on my course. </li>
+            <li>I expect to increase my communication skills. </li>
+            <li>I expect an accessible learning information. </li>
+        </ul>
+    </section>
+
+    <section class="motivations">
+        <h2>Motivations</h2>
+        <ul>
+            <li>I am motivated by my family. </li>
+            <li>I am also motivated to achieve my dreams. </li>
+            <li>I may motivate myself by self a reward.  </li>
+            <li>I am inspired by hard-working students around me. </li>
+            <li>I am motivated to new experiences. </li>
+        </ul>
+    </section>
+
+    <section class="contributions">
+        <h2>Contributions</h2>
+        <ul>
+            <li>I will contribute by being respectful toward others. </li>
+            <li>I will contribute by being helpful toward others. </li>
+            <li>I will contribute to participating in exercises and activities. </li>
+            <li>I will contribute by not disturbing the class. </li>
+            <li>I will contribute to promoting a safe environment for everyone.</li>
+        </ul>
+    </section>
+
+    <section class="hindrances">
+        <h2>Hindrances</h2>
+        <ul>
+            <li>I may procrastinate sometimes. </li>
+            <li>I fear from failing which affect my abilities. </li>
+            <li>Sometimes my Internet gets unstable or get cut-off. </li>
+            <li>I have low communication skills to ask for assistance. </li>
+            <li>I sometimes lose focus or have a daydream during lecture.</li>
+        </ul>
+    </section>
+</div>
+
+<footer>End</footer>
+
+</body>
+</html>
